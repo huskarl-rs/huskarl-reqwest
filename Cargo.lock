@@ -478,9 +478,9 @@ checksum = "6dbf3de79e51f3d586ab4cb9d5c3e2c14aa28ed23d180cf89b4df0454a69cc87"
 
 [[package]]
 name = "huskarl-core"
-version = "0.3.0"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d6c58504cfa664b77f9b49f654a8b3859ee297b73a691670ff775b94c0e96e42"
+checksum = "598343c103d47ba02270f3e9714ebdf034eee8991cf368d55fd737b62b3a48ae"
 dependencies = [
  "arc-swap",
  "base64",
@@ -504,7 +504,7 @@ dependencies = [
 
 [[package]]
 name = "huskarl-reqwest"
-version = "0.3.0"
+version = "0.4.0"
 dependencies = [
  "bon",
  "bytes",
