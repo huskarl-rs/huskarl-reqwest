@@ -76,11 +76,19 @@ impl ReqwestClient {
         ))]
         root_certificates: Option<Vec<reqwest::Certificate>>,
 
+        /// Whether to follow HTTP redirects. Defaults to `false`.
+        #[builder(default = false)]
+        follow_redirects: bool,
+
         configure_builder: Option<
             Box<dyn FnOnce(reqwest::ClientBuilder) -> reqwest::ClientBuilder>,
         >,
     ) -> Result<Self, ReqwestBuilderError> {
-        let mut reqwest_builder = reqwest::Client::builder();
+        let mut reqwest_builder = if follow_redirects {
+            reqwest::Client::builder()
+        } else {
+            reqwest::Client::builder().redirect(reqwest::redirect::Policy::none())
+        };
 
         if let Some(user_agent) = user_agent {
             reqwest_builder = reqwest_builder.user_agent(user_agent)
