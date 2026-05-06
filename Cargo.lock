@@ -472,9 +472,9 @@ checksum = "6dbf3de79e51f3d586ab4cb9d5c3e2c14aa28ed23d180cf89b4df0454a69cc87"
 
 [[package]]
 name = "huskarl-core"
-version = "0.4.1"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f283f8f301d2d6e03de5c71e33098730527d98c7c8bb193e5f336e93087bc1f8"
+checksum = "4d314af9a92c45a9a6ae582820c01fde05856e3df50585785b1037385606aab8"
 dependencies = [
  "arc-swap",
  "base64",
@@ -498,7 +498,7 @@ dependencies = [
 
 [[package]]
 name = "huskarl-reqwest"
-version = "0.4.1"
+version = "0.5.0"
 dependencies = [
  "bon",
  "bytes",
@@ -1592,9 +1592,9 @@ dependencies = [
 
 [[package]]
 name = "tower-http"
-version = "0.6.9"
+version = "0.6.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a28f0d049ccfaa566e14e9663d304d8577427b368cb4710a20528690287a738b"
+checksum = "68d6fdd9f81c2819c9a8b0e0cd91660e7746a8e6ea2ba7c6b2b057985f6bcb51"
 dependencies = [
  "bitflags",
  "bytes",
